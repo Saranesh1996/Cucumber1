@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="48.559277">
+<testcase classname="To validate the login functionality of amazon website" name="To enter the valid phno and invalid password" time="16.079892">
+<failure message="java.lang.AssertionError: manual break&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.stepDefinition.AmazonStepUp.toEnterInvalidPassword(AmazonStepUp.java:34)&#13;&#10;&#9;at ✽.To enter invalid password(src/test/resources/Amazon.feature:10)&#13;&#10;"><![CDATA[Given To launch the browser and hit the url.................................passed
+When To enter valid phno....................................................passed
+And To click the enter button...............................................passed
+And To enter invalid password...............................................failed
+And To click the sign in button.............................................skipped
+
+StackTrace:
+java.lang.AssertionError: manual break
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.stepDefinition.AmazonStepUp.toEnterInvalidPassword(AmazonStepUp.java:34)
+	at ✽.To enter invalid password(src/test/resources/Amazon.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of Facebook" name="To test the invalid userName and invalid password" time="6.635214">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at org.stepDefinition.StepDefinition.to_pass_the_invalid_userName_in_userName_field(StepDefinition.java:27)&#13;&#10;&#9;at ✽.To pass the invalid userName in userName field(src/test/resources/facebook.feature:9)&#13;&#10;"><![CDATA[Given To launch the browser and hit the facebook url........................passed
+When To pass the invalid userName in userName field.........................failed
+And To pass the invalid password in password field..........................skipped
+And To click the login button...............................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at org.stepDefinition.StepDefinition.to_pass_the_invalid_userName_in_userName_field(StepDefinition.java:27)
+	at ✽.To pass the invalid userName in userName field(src/test/resources/facebook.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="To validate the login functionality of Facebook" name="To check with bulk of datas" time="8.327936">
+<system-out><![CDATA[Given To launch the browser and hit the facebook url........................passed
+When To pass the bulk of datas"sara@gmail.com" in userName field............passed
+And To pass the bulk of datas"1234" in Password field.......................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of Facebook" name="To check with bulk of datas 2" time="9.039341">
+<system-out><![CDATA[Given To launch the browser and hit the facebook url........................passed
+When To pass the bulk of datas"verra@gmail.com" in userName field...........passed
+And To pass the bulk of datas"87989" in Password field......................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the login functionality of Facebook" name="To check with bulk of datas 3" time="8.476894">
+<system-out><![CDATA[Given To launch the browser and hit the facebook url........................passed
+When To pass the bulk of datas"kadan11@gmail.com" in userName field.........passed
+And To pass the bulk of datas"5678" in Password field.......................passed
+And To click the login button...............................................passed
+]]></system-out>
+</testcase>
+</testsuite>

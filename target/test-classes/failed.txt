@@ -1,0 +1,2 @@
+src/test/resources/Amazon.feature:6
+src/test/resources/facebook.feature:8
